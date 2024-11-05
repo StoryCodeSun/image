@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+</head>
+
+<body>
+
+  <style>
+  </style>
+
+  <div>测试</div>
+  <script>
+
+    const { port1, port2 } = new MessageChannel();
+    port1.postMessage('hello');
+    port2.onmessage = (e) => {
+      console.log('port2收到来自port1的消息', e.data);
+    }
+    port2.postMessage('world');
+    port1.onmessage = (e) => {
+      console.log('port1收到来自port2的消息', e.data);
+    }
+
+  </script>
+</body>
+
+</html>
