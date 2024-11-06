@@ -9,9 +9,56 @@
 <body>
 
   <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .img-box {
+      img {
+        width: 18vw;
+      }
+    }
+
+    .gif-box {
+      display: flex;
+      justify-content: center;
+
+      img {
+        height: 39vh;
+      }
+    }
+
+    .rest-box {
+      display: flex;
+      justify-content: center;
+
+      img {
+        height: 49vw;
+      }
+    }
   </style>
 
-  <div>测试</div>
+  <div class="img-box">
+    <img src="./scenery-copy.png">
+    <img src="./busy-copy.png">
+    <img src="./menu-copy.png">
+    <img src="./busy.png">
+    <img src="./menu_crane.png">
+    <img src="./scenery.png">
+    <img src="./terminal_crane.png">
+    <img src="./terminal-copy.png">
+  </div>
+  <div class="gif-box">
+    <img src="./car.gif">
+    <img src="./giphy.gif">
+    <img src="./jackson.gif">
+  </div>
+  <div class="rest-box">
+    <img src="./avatar.png">
+    <img src="./whale.gif">
+  </div>
   <script>
 
     const { port1, port2 } = new MessageChannel();
@@ -23,7 +70,6 @@
     port1.onmessage = (e) => {
       console.log('port1收到来自port2的消息', e.data);
     }
-
   </script>
 </body>
 
