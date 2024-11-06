@@ -1,4 +1,5 @@
 # 图床
+## 预览[点击访问](https://storycodesun.github.io/image/)
 
 <div class="img-box">
   <img style="width: 18vw" src="https://storycodesun.github.io/image/assets/image/scenery-copy.png">
