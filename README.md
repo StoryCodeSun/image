@@ -1,7 +1,5 @@
 # 图床
-1111
-![alt text](assets/image/busy-copy.png)
-1111
+
 <div class="img-box">
   <img style="width: 18vw" src="https://storycodesun.github.io/image/assets/image/scenery-copy.png">
   <img style="width: 18vw" src="https://storycodesun.github.io/image/assets/image/busy-copy.png">
